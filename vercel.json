@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "gunicorn supabase_raw:app",
+            "src": "supabase_raw.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "index.py"
         }
     ]
 }
